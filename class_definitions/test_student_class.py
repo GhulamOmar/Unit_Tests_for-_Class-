@@ -37,9 +37,8 @@ class MyTestCase(unittest.TestCase):
         name = _student.Student('Omar', 'Ghulam', 'BIS', 54.0)  # Does not use person from setUp(), has local p
         self.assertEqual('Omar,Ghulam', 'Omar,Ghulam')
 
-
-def test_person_str(self):
-    self.assertEqual(str(self.person), 'Duck, Daisy:')
+    def test_person_str(self):
+        self.assertEqual(str(self.studen), 'Omar, Ghulam:','BIS')
 
 
 if __name__ == '__main__':
