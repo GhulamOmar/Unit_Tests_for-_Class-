@@ -5,7 +5,7 @@ from class_definitions import student_class as _student
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
-        self.studen = _student.Student('Omar', 'Ghulam','BIS',66.0)
+        self.studen = _student.Student('Omar', 'Ghulam','BIS',6.0)
 
     def tearDown(self):
         del self.studen
