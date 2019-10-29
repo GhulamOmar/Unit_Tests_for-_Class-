@@ -12,8 +12,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_initial_value_required_attributes(self):
         self.assertEqual(self.studen.last_name, 'Omar')
-    #     self.assertEqual(self.studen.first_name, 'Ghulam')
-    #
+        self.assertEqual(self.studen.first_name, 'Ghulam')
+
     # def test_inital_all_attributes(self):
     #     student1 = _student.Student('Omar', 'Ghulam', 'BIS', 60.0)  # this is not self.person from setUp, but local
     #     assert student1.last_name == 'Omar'  # note no self here on person or assert
