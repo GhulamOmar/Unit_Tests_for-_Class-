@@ -10,8 +10,8 @@ class MyTestCase(unittest.TestCase):
     def tearDown(self):
         del self.studen
 
-    # def test_initial_value_required_attributes(self):
-    #     self.assertEqual(self.studen.last_name, 'Omar')
+    def test_initial_value_required_attributes(self):
+        self.assertEqual(self.studen.last_name, 'Omar')
     #     self.assertEqual(self.studen.first_name, 'Ghulam')
     #
     # def test_inital_all_attributes(self):
