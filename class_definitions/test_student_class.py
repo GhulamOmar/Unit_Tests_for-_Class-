@@ -5,7 +5,7 @@ from class_definitions import student_class as _student
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
-        self.studen = _student.Student('Omar', 'Ghulam', 'BIS', 6.0)
+        self.studen = _student.Student('Omar', 'Ghulam', 'BIS', 60.0)
 
     def tearDown(self):
         del self.studen
@@ -37,10 +37,8 @@ class MyTestCase(unittest.TestCase):
         name = _student.Student('Omar', 'Ghulam', 'BIS', 54.0)  # Does not use person from setUp(), has local p
         self.assertEqual('Omar,Ghulam', 'Omar,Ghulam')
 
-    def test_person_class_display_name_gpa1(self):
-        name = _student.Student( 54.0,'FDFD')  # Does not use person from setUp(), has local p
-        self.assertEqual('')
-
+    def test_initial_value_required_attributes1(self):
+        self.assertEqual(self.studen.gpa, 60.0)
 
 if __name__ == '__main__':
     unittest.main()
